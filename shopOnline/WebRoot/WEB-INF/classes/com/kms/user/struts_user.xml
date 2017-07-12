@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="true" />
+	 <package name="json" namespace="/user" extends="struts-default,json-default" >  
+         <action name="Check_User" class="com.kms.user.action.User_action" method="Check_User">
+         	<!-- <result name = "loginsuccess" type="redirect">/index.jsp</result> -->
+         </action>
+         <action name="reg" class="com.kms.user.action.User_action" method="reg">
+         	<!-- <result name = "loginsuccess" type="redirect">/index.jsp</result> -->
+         </action>
+         <action name="login" class="com.kms.user.action.User_action" method="login">
+         	<!-- <result name = "loginsuccess" type="redirect">/index.jsp</result> -->
+         </action>
+         <action name="QueryUser" class="com.kms.user.action.User_action" method="QueryUser">
+         	<!-- <result name = "QueryUsersuccess" >/User_QueryUser.jsp</result> -->
+         </action>
+         <action name="update" class="com.kms.user.action.User_action" method="update">
+         	<!-- <result name = "updatesuccess" >/User_QueryUser.jsp</result> -->
+         </action>
+    </package>  
+</struts>
